@@ -1,4 +1,4 @@
-<%= link_to "Wendies.Co.Uk", root_path, :class => 'brand' %>
+<a href="/" class='brand' style="margin-bottom: -5px;"><img src="<%= asset_path 'wendies_200.png' %>" style="display: inline; "></a>
 <ul class="nav">
   <% if user_signed_in? %>
     <li>
@@ -20,7 +20,7 @@
     <% end %>
   <% else %>
     <li>
-    <%= link_to 'Sign up', new_user_registration_path %>
+    <%#= link_to 'Sign up', new_user_registration_path %>
     </li>
   <% end %>
 </ul>
